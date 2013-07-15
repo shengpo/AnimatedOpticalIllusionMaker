@@ -7,21 +7,20 @@ try to use Processing to make an animated optical illusion
 demo video : http://youtu.be/ebApHDtSxqM
 
 ---
-using instruction：
-1. please modify the `ImageSource` class to fit your animation needs.
-2. when you `new Stripes()`, adjusting last three parameters (`blackWidth`, `gapWidth`, `panSpeed`) can affect the final optical illusion image and the animation result. please try different parameter values.
-3. press `p` to preview original animation
-4. press `s` to use stripes
-5. press `SPACE` to produce the final optical illusion image
-6. press `i` to show the produced optical illusion image (need to press `SPACE` to produce optical illusion image firstly)
+using instruction：<br/>
+1. please modify the `ImageSource` class to fit your animation needs.<br/>
+2. when you `new Stripes()`, adjusting last three parameters (`blackWidth`, `gapWidth`, `panSpeed`) can affect the final optical illusion image and the animation result. please try different parameter values.<br/>
+3. press `p` to preview original animation<br/>
+4. press `s` to use stripes<br/>
+5. press `SPACE` to produce the final optical illusion image<br/>
+6. press `i` to show the produced optical illusion image (need to press `SPACE` to produce optical illusion image firstly)<br/>
 
-<br/>
-操作說明：
-1. 自行更改ImageSource class，以符合自己想要的動畫效果
-2. new Stripes物件的時候, 調整blackWidth, gapWidth, panSpeed這三個參數可能會影響輸出及動畫效果, 需自行使用不同參數值測試
-3. 按p是預覽原始動畫效果
-4. 按s是使用柵欄(stripes)
-5. 按空白鍵是產生optical illusion圖案
-6. 按i是秀出所產生optical illusion圖案 (需先按空白鍵產生optical illusion圖案)
+操作說明：<br/>
+1. 自行更改 `ImageSource` class，以符合自己想要的動畫效果<br/>
+2. `new Stripes()` 的時候, 調整 `blackWidth` , `gapWidth` , `panSpeed` 這三個參數可能會影響輸出及動畫效果, 需自行使用不同參數值測試<br/>
+3. 按 `p` 是預覽原始動畫效果<br/>
+4. 按 `s` 是使用柵欄(stripes)<br/>
+5. 按 `空白鍵` 是產生optical illusion圖案<br/>
+6. 按 `i` 是秀出所產生optical illusion圖案 (需先按空白鍵產生optical illusion圖案)
 
 
