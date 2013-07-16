@@ -14,6 +14,7 @@ using instruction：<br/>
 4. press `s` to use stripes<br/>
 5. press `SPACE` to produce the final optical illusion image<br/>
 6. press `i` to show the produced optical illusion image (need to press `SPACE` to produce optical illusion image firstly)<br/>
+7. press `v` to make PDF files of optical illusion image and stripes image for printing out when needed<br/>
 
 操作說明：<br/>
 1. 自行更改 `ImageSource` class，以符合自己想要的動畫效果<br/>
@@ -21,6 +22,7 @@ using instruction：<br/>
 3. 按 `p` 是預覽原始動畫效果<br/>
 4. 按 `s` 是使用柵欄(stripes)<br/>
 5. 按 `空白鍵` 是產生optical illusion圖案<br/>
-6. 按 `i` 是秀出所產生optical illusion圖案 (需先按空白鍵產生optical illusion圖案)
+6. 按 `i` 是秀出所產生optical illusion圖案 (需先按空白鍵產生optical illusion圖案)<br/>
+7. 按 `v` 是產生optical illusion圖案的PDF檔，以及柵欄(stripes)的PDF檔。以方便做print out。
 
 
