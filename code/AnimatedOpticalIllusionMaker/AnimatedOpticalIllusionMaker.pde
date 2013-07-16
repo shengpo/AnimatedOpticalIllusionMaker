@@ -6,6 +6,7 @@
    按s是使用柵欄(stripes)
    按空白鍵是產生optical illusion圖案
    按i是秀出所產生optical illusion圖案 (需先按空白鍵產生optical illusion圖案)
+4. 按v是產生optical illusion圖案的PDF檔，以及柵欄(stripes)的PDF檔。以方便做print out。
 
 demo video : http://youtu.be/ebApHDtSxqM
 
@@ -15,6 +16,9 @@ demo video : http://youtu.be/ebApHDtSxqM
  Date:   2013.07.15
  License: CC BY-SA 3.0
 */
+
+
+import processing.pdf.*;
 
 
 ImageSource source = null;
@@ -83,7 +87,14 @@ void keyPressed(){
     if(key == ' '){
         illusionImage = stripes.getIllusionImage(source);
         
-        println("Optical Illusion Image produced!!");
+        println("Optical Illusion Image produced !!");
+    }
+    
+    //make PDF file for printing out
+    if(key == 'v'){
+        stripes.makeIllusionStripesPDF(source, sketchPath("pdf"), "sample");
+        
+        println("PDF files of Optical Illusion Image and Stripes Image are produced !!");
     }
 }
 

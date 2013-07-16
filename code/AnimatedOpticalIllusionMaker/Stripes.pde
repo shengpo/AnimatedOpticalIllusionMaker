@@ -67,6 +67,46 @@ public class Stripes {
     }
     
     
+    public void makeIllusionStripesPDF(ImageSource source, String filePath, String fileName){
+        //make stripes PDF file
+        PGraphics pg = createGraphics(w, h, PDF, completePath(filePath)+noExt(fileName)+"_stripes.pdf");
+
+        pg.beginDraw();
+        pg.background(255);
+        pg.noStroke();
+        pg.fill(0);
+
+        for(int i=0; i<w; i=i+blackWidth+gapWidth){
+            pg.rect(i, 0, blackWidth, h);
+        }
+
+        pg.dispose();
+        pg.endDraw();
+
+        
+        //make optical illusion PDF file
+        int maxFrameNumber = source.getTotalIllusionFrame();
+        pg = createGraphics(width, height, PDF, completePath(filePath)+noExt(fileName)+"_illusion.pdf");
+
+        pg.beginDraw();
+        pg.background(255);
+
+        for(int c=0; c<maxFrameNumber; c++){
+            background(255);
+            PImage next = source.getNextFrame();
+
+            //get the image in the gap
+            for(int i=blackWidth+c*gapWidth; i<width; i=i+gapWidth+blackWidth){
+                PImage gapImage = next.get(i, 0, gapWidth, h);
+                parseGapLine(pg, gapImage, i, 0);
+            }
+        }        
+
+        pg.dispose();
+        pg.endDraw();
+    }
+    
+    
     private void parseGapLine(PGraphics pg, PImage gapImage, int x, int y){
         int y1 = -1;
         int y2 = -1;
@@ -98,6 +138,27 @@ public class Stripes {
                 }
             }
         }
+    }
+    
+    
+    private String completePath(String path){
+        if(path.lastIndexOf("/") == path.length()-1){
+            return path;
+        }else{
+            path = path+"/";
+            return path;
+        }
+    }
+    
+    
+    private String noExt(String fileName){
+        if(fileName.lastIndexOf(".") == 0){
+            fileName = "sample";
+        }else if(fileName.lastIndexOf(".") > 0){
+            fileName = fileName.substring(0, fileName.lastIndexOf("."));
+        }
+        
+        return fileName;
     }
 }
 
