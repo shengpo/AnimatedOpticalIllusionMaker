@@ -43,7 +43,7 @@ public class Stripes {
         }
     }
     
-    public PImage getIllusionImage(ImageSource source){
+    public PImage getIllusionImage(ImageSourceInterface source){
         int maxFrameNumber = source.getTotalIllusionFrame();
         PGraphics pg = createGraphics(width, height);
 
@@ -67,7 +67,7 @@ public class Stripes {
     }
     
     
-    public void makeIllusionStripesPDF(ImageSource source, String filePath, String fileName){
+    public void makeIllusionStripesPDF(ImageSourceInterface source, String filePath, String fileName){
         //make stripes PDF file
         PGraphics pg = createGraphics(w, h, PDF, completePath(filePath)+noExt(fileName)+"_stripes.pdf");
 
