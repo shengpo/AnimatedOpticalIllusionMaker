@@ -1,7 +1,7 @@
 AnimatedOpticalIllusionMaker
 ============================
 
-try to use Processing to make an animated optical illusion
+try to use Processing to make an animated optical illusion<br/>
 嘗試使用Processing做出animated optical illusion效果
 
 demo video : http://youtu.be/ebApHDtSxqM
