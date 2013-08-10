@@ -9,6 +9,7 @@ using easier way to create your own animated optical illusion, just like the way
 
 demo video: http://youtu.be/sfQP6yzejXs
 
+------------------
 
 ###ver1
 creating your own `ImageSource` class, and using it to create animated optical illusion. this way is more complicated.
