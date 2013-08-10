@@ -10,6 +10,12 @@ using easier way to create your own animated optical illusion, just like the way
 demo video: http://youtu.be/sfQP6yzejXs
 
 
+NOTE：
+------
+- template code is in the folder `template_code`
+- example codes are in the folder `example_code`
+
+
 簡單說明：
 ---------
 ####柵欄(stripes)設定要領：
